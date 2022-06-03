@@ -9,32 +9,125 @@ html, body {
     height: 100%;
 }
 
-#root {
+.GAME {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     align-items: center;
-}
-
-.matrix {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
 }
 
-.cube {
-    background-color: black;
-    border-color: black;
-    height: 198px;
-    width: 320px;
-    border-radius: 2px;
-    margin: 12px;
+.Block{
+    margin: 40px;
+    height: 200px;
+    width: 200px;
+    border: solid black;
+    border-width: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
     cursor: pointer;
+}
+.Block_top{
+    display: flex;
+}
+.Block_seredina{
+    display: flex;
+}
+.Block_bottom{
+    display: flex;
+}
+.img1{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.img2{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.img3{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.img4{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.img5{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.img6{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.img7{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.img8{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.img9{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.img10{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.img11{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.img12{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.img13{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.img14{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.img15{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.img16{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.img17{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.img18{
+    width: 100px;
+    height: 100px;
+    display: none;
 }

@@ -1,83 +1,235 @@
-const game = {
-    height: 198,
-    width: 320,
-    matrix: 4,
-    cards: [
-        {
-            color: '#87D204',
-            isShow: false,
-        },
-        {
-            color: '#D27904',
-            isShow: false,
-        },
-        {
-            color: '#87D204',
-            isShow: false,
-        },
-        {
-            color: '#D27904',
-            isShow: false,
-        },
-    ]
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-game.cards = generateCards(game.matrix);
+banan1 = getRandomIntInclusive(1,2);
+banan2 = getRandomIntInclusive(1,2);
+banan3 = getRandomIntInclusive(1,2);
+banan4 = getRandomIntInclusive(1,2);
+banan5 = getRandomIntInclusive(1,2);
+banan6 = getRandomIntInclusive(1,2);
+banan7 = getRandomIntInclusive(1,2);
+banan8 = getRandomIntInclusive(1,2);
+banan9 = getRandomIntInclusive(1,2);
+banan10 = getRandomIntInclusive(1,2);
+banan11 = getRandomIntInclusive(1,2);
+banan12 = getRandomIntInclusive(1,2);
+banan13 = getRandomIntInclusive(1,2);
+banan14 = getRandomIntInclusive(1,2);
+banan15 = getRandomIntInclusive(1,2);
+banan16 = getRandomIntInclusive(1,2);
+banan17 = getRandomIntInclusive(1,2);
+banan18 = getRandomIntInclusive(1,2);
 
-function generateCards(matrix) {
-    const cards = [];
-    const countCards = (matrix * matrix) / 2;
 
-    for (let i = 0; i < countCards; i++) {
-        const e = {
-            color: randomColorRGB(),
-            isShow: false, 
-
-        }
-        cards.push(e);
-        
+$("#img1").click(function () {
+    if (banan1 == 1) {
+        $("#img1").css({
+            "display": "none"
+        })
+    } else {
+        $("#img1").css({
+            "display": "show"
+        })
     }
-
-
-    return sortArray([...cards, ...cards]);
-
-}
-
-    function sortArray(array){
-        for (let i = 0; i < 64; i++) {
-            array.sort(() => Math.random() - 0,5); 
-        
-        }
-    
-        return array;   
+})
+$("#img2").click(function () {
+    if (banan2 == 1) {
+        $("#img2").css({
+            "display": "none"
+        })
+    } else {
+        $("#img2").css({
+            "display": "show"
+        })
     }
-
-function randomColorRGB(){
-    return 'rgb('+ randomNumber(0, 255) +', '+ randomNumber(0,255)+', '+ randomNumber(0,255) +' )';
-}
-
-function randomNumber(min, max){
-    return Math.floor(min + Math.random()*(max + 1 - min)); 
-}
-
-$(document).ready(function () {
-
-    $("#root").html("<div class='matrix'></div>");
-    $(".matrix").width((game.width + 24) * game.matrix).height((game.height + 24) * game.matrix);
-
-    for (let i = 0; i < game.cards.length; i++) {
-        $(".matrix").append("<div id='cube_" + i + "'class ='cube'> </div>");
+})
+$("#img3").click(function () {
+    if (banan3 == 1) {
+        $("#img3").css({
+            "display": "show"
+        })
+    } else {
+        $("#img3").css({
+            "display": "none"
+        })
     }
-
-    for (let i = 0; i < game.cards.length; i++) {
-        const e = game.cards[i];
-        $("#cube_" + i).click(function () {
-            const id = $("#cube_" + i).attr('id');
-
-            $("#cube_" + i).css({
-                "background-color": e.color
-            });
-            console.log(Number(id.replace('cube_', '')));
-        });
+})
+$("#img4").click(function () {
+    if (banan4 == 1) {
+        $("#img4").css({
+            "display": "show"
+        })
+    } else {
+        $("#img4").css({
+            "display": "none"
+        })
     }
-});
+})
+$("#img5").click(function () {
+    if (banan5 == 1) {
+        $("#img5").css({
+            "display": "show"
+        })
+    } else {
+        $("#img5").css({
+            "display": "none"
+        })
+    }
+})
+$("#img6").click(function () {
+    if (banan6 == 1) {
+        $("#img6").css({
+            "display": "show"
+        })
+    } else {
+        $("#img6").css({
+            "display": "none"
+        })
+    }
+})
+$("#img7").click(function () {
+    if (banan7 == 1) {
+        $("#img7").css({
+            "display": "show"
+        })
+    } else {
+        $("#img7").css({
+            "display": "none"
+        })
+    }
+})
+$("#img8").click(function () {
+    if (banan8 == 1) {
+        $("#img8").css({
+            "display": "show"
+        })
+    } else {
+        $("#img8").css({
+            "display": "none"
+        })
+    }
+})
+$("#img9").click(function () {
+    if (banan9 == 1) {
+        $("#img9").css({
+            "display": "show"
+        })
+    } else {
+        $("#img9").css({
+            "display": "none"
+        })
+    }
+})
+$("#img_box1").click(function () {
+    if (banan1 == 1) {
+        $("#img_box1").css({
+            "display": "show"
+        })
+    } else {
+        $("#img_box1").css({
+            "display": "none"
+        })
+    }
+})
+$("#img_box1").click(function () {
+    if (banan1 == 1) {
+        $("#img_box1").css({
+            "display": "show"
+        })
+    } else {
+        $("#img_box1").css({
+            "display": "none"
+        })
+    }
+})
+$("#img_box1").click(function () {
+    if (banan1 == 1) {
+        $("#img_box1").css({
+            "display": "show"
+        })
+    } else {
+        $("#img_box1").css({
+            "display": "none"
+        })
+    }
+})
+$("#img_box1").click(function () {
+    if (banan1 == 1) {
+        $("#img_box1").css({
+            "display": "show"
+        })
+    } else {
+        $("#img_box1").css({
+            "display": "none"
+        })
+    }
+})
+$("#img_box1").click(function () {
+    if (banan1 == 1) {
+        $("#img_box1").css({
+            "display": "show"
+        })
+    } else {
+        $("#img_box1").css({
+            "display": "none"
+        })
+    }
+})
+$("#img_box1").click(function () {
+    if (banan1 == 1) {
+        $("#img_box1").css({
+            "display": "show"
+        })
+    } else {
+        $("#img_box1").css({
+            "display": "none"
+        })
+    }
+})
+$("#img_box1").click(function () {
+    if (banan1 == 1) {
+        $("#img_box1").css({
+            "display": "show"
+        })
+    } else {
+        $("#img_box1").css({
+            "display": "none"
+        })
+    }
+})
+$("#img_box1").click(function () {
+    if (banan1 == 1) {
+        $("#img_box1").css({
+            "display": "show"
+        })
+    } else {
+        $("#img_box1").css({
+            "display": "none"
+        })
+    }
+})
+$("#img_box1").click(function () {
+    if (banan1 == 1) {
+        $("#img_box1").css({
+            "display": "show"
+        })
+    } else {
+        $("#img_box1").css({
+            "display": "none"
+        })
+    }
+})
+$("#img_box1").click(function () {
+    if (banan1 == 1) {
+        $("#img_box1").css({
+            "display": "show"
+        })
+    } else {
+        $("#img_box1").css({
+            "display": "none"
+        })
+    }
+})
